@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Brand</a>
+                <a href="#">Features</a>
+                <a href="#">Reviews</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="text">
+            <h5>Unleash the Thrill of Driving</h5>
+            <h2>Experience the <br> <span>Ultimate Ride</span></h2>
+            <p>Unparalleled Elegance, Raw Power, and Unrivaled Performance.</p>
+            <a href="#" class="btn">Schedule Your Test Drive</a>
+        </div>
+        
+    </div>
+    <script>
+        let hero =document.querySelector('.hero');
+        setInterval(() =>{
+            hero.style.backgroundImage = "url(bg-light.jpg)"
+            
+            setTimeout(() =>{
+                hero.style.backgroundImage = "url(bg.jpg)"
+            },1000);
+        }, 2200);
+    </script>
+</body>
+</html>
